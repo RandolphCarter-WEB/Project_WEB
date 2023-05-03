@@ -1,3 +1,5 @@
+//TODO: 함수 리펙토링
+
 export function isIncludes(key, self) {
     if(self.answer.includes(key)) {
         self.userAnswer.push(key);

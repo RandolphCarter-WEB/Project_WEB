@@ -1,10 +1,11 @@
+//TODO: 컴포넌트 나누기
 export function keyboardBtn() {
     const item = "abcdefghijklmnopqrstuvwxyz".split("");
 
     const render = () => {
         return `
             ${item.map(element => {
-                return `<button id=${element+"Key"} class="key" data-key="${element}">${element}</button>`
+                return `<button id=${element+"Key"} class="key" data-key="${element}"><p>${element}</p></button>`
             }).join("\n")}
         `;
     }

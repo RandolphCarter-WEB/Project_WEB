@@ -11,6 +11,7 @@ class App {
     }
 
     setElement() {
+        //event.js에 따로 정리 & 분리
         this.random_question = Math.floor(Math.random() * 2);
         this.random_data = Math.floor(Math.random() * (this.random_question == 0 ? 6 : 4));
 
@@ -25,11 +26,14 @@ class App {
         //TODO:DELELETE SHOW ANSWER
         console.log(this.answer);
 
+
+        //MAX_HP 활용할 것
         this.userHP = 10;
         this.userAnswer = [];
 
         this.render();
 
+        //각각의 컴포넌트에 넣을 것
         questionDiv.innerHTML = QuestionUI(this.randomData, this.userHP, this.userAnswer);
         gameUI.innerHTML = HangmanUI();
         keyUI.innerHTML = keyboardBtn();
@@ -81,11 +85,12 @@ class App {
             });
         });
 
-        document.querySelector("#showHintBtn").addEventListener("click", () => {
+        showHintBtn.addEventListener("click", () => {
             const hint = document.querySelector("#hint");
-            showHint(hint)
+            showHint(hint);
         });
-        document.querySelector("#resetBtn").addEventListener("click", () => { location.reload(true); });
+
+        resetBtn.addEventListener("click", () => { location.reload(true); });
     }
 }
 

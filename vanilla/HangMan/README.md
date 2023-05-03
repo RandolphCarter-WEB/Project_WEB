@@ -6,31 +6,18 @@
 #### This Project Contains 3 folders in src file structure.
 
 📦HangMan
-
  ┣ 📂src
-
  ┃ ┣ 📂component
-
  ┃ ┃ ┗ 📜component.js
-
  ┃ ┣ 📂css
-
  ┃ ┃ ┣ 📜default.css
-
  ┃ ┃ ┗ 📜index.css
-
  ┃ ┣ 📂data
-
  ┃ ┃ ┗ 📜data.js
-
  ┃ ┣ 📂event
-
  ┃ ┃ ┗ 📜event.js
-
  ┃ ┗ 📜app.js
-
  ┣ 📜index.html
- 
  ┗ 📜README.md
 
 
