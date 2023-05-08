@@ -46,6 +46,8 @@ Vanilla Js Web Component 연습용 HangMan Game
 > 1. Web 화면상의 Button뿐이 아닌 User의 Keyboard로도 상호작용할 수 있도록 확장
 > 2. 사용자의 시간과 점수를 체크하여 점수를 기록할 수 있도록 데이터 저장 추가
 > 3. Background의 Style과 Button의 Style을 변경하는 등의 사용자 편의 UI 제공
+> 4. store를 구현하여 data 중앙 관리
+> 5. 다중 Page를 통한 게임 (설정창 및 메뉴창) 구현
 
 ### Technology ( Vanilla JS )
 -------------------------
@@ -62,9 +64,11 @@ Vanilla Js Web Component 연습용 HangMan Game
 ### Update Log
 ------------------
 #### 2023.05.03
-> 1. Event.js
+> 1. Event.js Logic refactoring
 > 2. app.js Event Logic refactoring
-> 3. Web site design [index.css]
+> 3. Add Web site design [index.css]
 
 #### 2023.05.08
-> 1. write README.md file
+> 1. 특정 키가 입력 될 때 disabled 이벤트가 먹히지 않는 문제를 해결
+> 2. 몇몇의 Event Logic이 설계대로 작동되지 않는 문제를 해결
+> 3. write README.md file
