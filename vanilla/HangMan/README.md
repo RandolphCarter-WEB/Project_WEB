@@ -2,6 +2,12 @@
 ----------------------
 Vanilla Js Web Component 연습용 HangMan Game
 
+## How to use
+-------------------
+```
+    use the Live Server extension in Vscode.
+```
+
 ## This Project is..
 -------------------
 ### Purpose of this Project
