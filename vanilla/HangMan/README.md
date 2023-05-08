@@ -10,20 +10,20 @@ Vanilla Js Web Component 연습용 HangMan Game
 
 ## File Structure
 --------------------
-📦HangMan
- ┣ 📂src
- ┃ ┣ 📂component
- ┃ ┃ ┗ 📜component.js
- ┃ ┣ 📂css
- ┃ ┃ ┣ 📜default.css
- ┃ ┃ ┗ 📜index.css
- ┃ ┣ 📂data
- ┃ ┃ ┗ 📜data.js
- ┃ ┣ 📂event
- ┃ ┃ ┗ 📜event.js
- ┃ ┗ 📜app.js
- ┣ 📜index.html
- ┗ 📜README.md
+> 📦HangMan
+> ┣ 📂src
+> ┃ ┣ 📂component
+> ┃ ┃ ┗ 📜component.js
+> ┃ ┣ 📂css
+> ┃ ┃ ┣ 📜default.css
+> ┃ ┃ ┗ 📜index.css
+> ┃ ┣ 📂data
+> ┃ ┃ ┗ 📜data.js
+> ┃ ┣ 📂event
+> ┃ ┃ ┗ 📜event.js
+> ┃ ┗ 📜app.js
+> ┣ 📜index.html
+> ┗ 📜README.md
 
 ## This Project is..
 -------------------
