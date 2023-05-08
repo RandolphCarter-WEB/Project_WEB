@@ -8,6 +8,25 @@ Vanilla Js Web Component 연습용 HangMan Game
     use the Live Server extension in Vscode.
 ```
 
+## File Structure
+--------------------
+```
+📦HangMan
+ ┣ 📂src
+ ┃ ┣ 📂component
+ ┃ ┃ ┗ 📜component.js
+ ┃ ┣ 📂css
+ ┃ ┃ ┣ 📜default.css
+ ┃ ┃ ┗ 📜index.css
+ ┃ ┣ 📂data
+ ┃ ┃ ┗ 📜data.js
+ ┃ ┣ 📂event
+ ┃ ┃ ┗ 📜event.js
+ ┃ ┗ 📜app.js
+ ┣ 📜index.html
+ ┗ 📜README.md
+ ```
+
 ## This Project is..
 -------------------
 ### Purpose of this Project
@@ -23,7 +42,7 @@ Vanilla Js Web Component 연습용 HangMan Game
 > 1. KeyBoard Button을 통한 다양한 상호작용 제공
 > 2. Hang Man Canvus를 통해 진행 상황에 대한 여부 확인 가능
 > 3. 그 외의 hint Button, reset Button을 통한 편의성 제공
-
+>
 > #### Upcoming features
 > 
 > 1. Web 화면상의 Button뿐이 아닌 User의 Keyboard로도 상호작용할 수 있도록 확장
@@ -45,7 +64,7 @@ Vanilla Js Web Component 연습용 HangMan Game
 ### Update Log
 ------------------
 #### 2023.05.03
-> 1. Event.js Event Logic refactoring
+> 1. Event.js
 > 2. app.js Event Logic refactoring
 > 3. Web site design [index.css]
 
