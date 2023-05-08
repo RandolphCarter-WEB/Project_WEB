@@ -10,7 +10,6 @@ Vanilla Js Web Component 연습용 HangMan Game
 
 ## File Structure
 --------------------
-```
 📦HangMan
  ┣ 📂src
  ┃ ┣ 📂component
@@ -25,7 +24,6 @@ Vanilla Js Web Component 연습용 HangMan Game
  ┃ ┗ 📜app.js
  ┣ 📜index.html
  ┗ 📜README.md
- ```
 
 ## This Project is..
 -------------------
