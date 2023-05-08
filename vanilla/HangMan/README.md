@@ -32,7 +32,16 @@ Vanilla Js Web Component 연습용 HangMan Game
 > 3. 기본적으로 제공하는 li-element나 HTMLElement를 사용하지 않고, Basic Component형식으로 작성함
 > 
 > #### Event Logic
-> 1. JS 배열 내의 includes의 기능과 정규식을 이용하여, QuestionUI에서 표기할 정답에 대해 "_" 혹은 User가 맞춘 정답으로 구분하여 표기
-> 2. Game Data를 Json형식으로 data.js에 저장하여 이를 App.js에서 불러와 랜덤한 숫자에 따라서 기본적인 element를 세팅
-> 3. Canvus에 행맨을 그리는 것을 Js 내의 getContext("2d")를 통해 그림을 그릴 수 있도록 Draw함수를 두어 User의 상호작용에 따라 표기
-> 4. 
+> 1. Game Data를 Json형식으로 data.js에 저장하여 이를 App.js에서 불러와 랜덤한 숫자에 따라서 기본적인 Component의 element를 세팅
+> 2. Canvus에 행맨을 그리는 것을 Js 내의 getContext("2d")를 통해 그림을 그릴 수 있도록 Draw함수를 두어 User의 상호작용에 따라 표기
+> 3. Code refactoring을 통해 함수를 하나의 역할만 할 수 있도록 나눔
+
+### Update Log
+------------------
+#### 2023.05.03
+> 1. Event.js Event Logic refactoring
+> 2. app.js Event Logic refactoring
+> 3. Web site design [index.css]
+
+#### 2023.05.08
+> 1. write README.md file
