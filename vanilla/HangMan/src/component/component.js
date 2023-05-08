@@ -5,7 +5,7 @@ export function keyboardBtn() {
     const render = () => {
         return `
             ${item.map(element => {
-                return `<button id=${element+"Key"} class="key" data-key="${element}"><p>${element}</p></button>`
+                return `<button id=${element+"Key"} class="key" data-key="${element}">${element}</button>`
             }).join("\n")}
         `;
     }
