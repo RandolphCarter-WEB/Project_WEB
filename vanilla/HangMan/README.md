@@ -77,3 +77,4 @@ Vanilla Js Web Component 연습용 HangMan Game
 > 1. Component는 분류하였으나, State의 공유가 정상 작동하지 않아 State의 구현을 위한 Observer Pattern 공부
 > 2. Store의 삽입을 위해 해당 Project의 재설계 중
 > 3. 다양한 Page의 Routing을 구현하기 위해 pages라는 파일 생성 후 GamePage 구현
+> 4. Component의 분류에서 발생한 render의 오류 해결 및 GamePage의 template 수정

@@ -1,4 +1,5 @@
 import Component from "../core/Component.js";
+import * as event from "../event/event.js";
 import gameData from "../data/gameData.js";
 import QuestionUI from "../component/questionUI.js";
 import HangmanUI from "../component/hangmanUI.js";
@@ -20,17 +21,10 @@ export default class gamePage extends Component {
         //TODO:DELELETE SHOW ANSWER
         console.log(this.answer);
 
-
-        //MAX_HP 활용할 것
-        this.userHP = 10;
+        this.userHP = this.MAX_HP;
         this.userAnswer = [];
 
         this.render();
-
-        //각각의 컴포넌트에 넣을 것
-        questionDiv.innerHTML = QuestionUI(this.randomData, this.userHP, this.userAnswer);
-        gameUI.innerHTML = HangmanUI();
-        keyUI.innerHTML = keyboardBtn();
     }
 
     template() {
@@ -41,9 +35,15 @@ export default class gamePage extends Component {
                 <p>Use the alphabet below to guess the word, or click hint to get a clue.</p>
             </div>
 
-            <div id="questionDiv"></div>
-            <div id="gameUI"></div>
-            <div id="keyUI"></div>
+            <div id="questionDiv">
+                ${QuestionUI(this.randomData, this.userHP, this.userAnswer)}
+            </div>
+            <div id="gameUI">
+                ${HangmanUI()}
+            </div>
+            <div id="keyUI">
+                ${keyboardBtn()}
+            </div>
             <div id="userUI">
                 <button id="showHintBtn" class="key">Hint</button>
                 <button id="resetBtn" class="key">Reset</button>
@@ -56,18 +56,18 @@ export default class gamePage extends Component {
 
         keyBtns.forEach(Btn => {
             Btn.addEventListener("click", (e) => {
-                if(isIncludes(e.target.dataset.key, this) == 0) {
+                if(event.isIncludes(e.target.dataset.key, this) == 0) {
                     this.userHP--;
-                    animate(stickman, this.userHP);
+                    event.animate(stickman, this.userHP);
                 }
 
                 e.target.disabled = "true";
                 questionDiv.innerHTML = QuestionUI(this.randomData, this.userHP, this.userAnswer);
 
                 if(this.userHP == 0) {
-                    userLife.innerHTML = isLose();
+                    userLife.innerHTML = event.isLose();
                 } else {
-                    const winInfo = isWin(this);
+                    const winInfo = event.isWin(this);
                     userLife.innerHTML = (winInfo == 0)
                         ? userLife.innerHTML
                         : winInfo;
@@ -77,7 +77,7 @@ export default class gamePage extends Component {
 
         showHintBtn.addEventListener("click", () => {
             const hint = document.querySelector("#hint");
-            showHint(hint);
+            event.showHint(hint);
         });
 
         resetBtn.addEventListener("click", () => { location.reload(true); });
