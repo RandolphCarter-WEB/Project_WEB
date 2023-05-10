@@ -72,3 +72,8 @@ Vanilla Js Web Component 연습용 HangMan Game
 > 1. 특정 키가 입력 될 때 disabled 이벤트가 먹히지 않는 문제를 해결
 > 2. 몇몇의 Event Logic이 설계대로 작동되지 않는 문제를 해결
 > 3. write README.md file
+
+#### 2023.05.10
+> 1. Component는 분류하였으나, State의 공유가 정상 작동하지 않아 State의 구현을 위한 Observer Pattern 공부
+> 2. Store의 삽입을 위해 해당 Project의 재설계 중
+> 3. 다양한 Page의 Routing을 구현하기 위해 pages라는 파일 생성 후 GamePage 구현
