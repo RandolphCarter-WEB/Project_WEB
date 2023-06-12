@@ -1,13 +1,12 @@
 import Component from "./core/component.js";
-
 import { calculate } from "./component/Calculate.js"
 import { Button } from "./component/Btn.js";
-
 import { inputNum, inputOperator, store } from "./store/Store.js";
 class App extends Component {
     initState() { return store.getState() }
     template() {
         return `
+            //TODO use HTML Component
             ${calculate()}
             <div class="BtnUI"> 
                 ${Button({

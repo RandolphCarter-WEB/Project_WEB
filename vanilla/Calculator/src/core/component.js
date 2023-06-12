@@ -1,5 +1,6 @@
 import { observable, observe } from './Observer.js';
 
+//TODO use HTTPElement extends
 export default class Component {
     state; target;
     constructor ($target) {

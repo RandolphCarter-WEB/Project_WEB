@@ -2,6 +2,7 @@ import { store } from "../store/Store.js";
 import { input } from "./input.js";
 
 export const screen = () => {
+    //TODO input listener
     return `
         <div class="ScreenContainer">
             ${input({
